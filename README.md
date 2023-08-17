@@ -34,7 +34,15 @@ This project is licensed under the MIT License, allowing you to use, modify, and
 
 Feel free to adjust and expand upon this description to best fit the specifics of your project and its features.
 
+# ScreenShots
+![authorisation bearer](https://github.com/swapniltake1/Secure-Spring-Boot-API-with-JWT-Authentication/assets/61576958/7dc88d35-b7c8-463c-bc73-b4e08986be2c)
 
 
 
+![login successfull JWT](https://github.com/swapniltake1/Secure-Spring-Boot-API-with-JWT-Authentication/assets/61576958/e6880899-118a-4b5c-95cc-ebfd3ac0afcc)
+
+
+
+![Uploading login successfull JWT.png…]()
+![Uploading authorisation bearer.png…]()
 
