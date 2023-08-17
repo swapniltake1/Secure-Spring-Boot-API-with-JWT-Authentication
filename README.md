@@ -44,5 +44,6 @@ Feel free to adjust and expand upon this description to best fit the specifics o
 
 
 ![Uploading login successfull JWT.png…]()
+
 ![Uploading authorisation bearer.png…]()
 
