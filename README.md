@@ -1,4 +1,4 @@
-## Secure Spring Boot API with Role-Based Authentication and JWT
+# Secure Spring Boot API with Role-Based Authentication and JWT
 # Overview
 This GitHub repository hosts a comprehensive example of a secure RESTful API built using Spring Boot, fortified with Spring Security for role-based authentication, and powered by JSON Web Tokens (JWT) for robust authorization. The project showcases a well-structured implementation that ensures only validated requests with bearer tokens gain access, thereby enhancing data security and privacy.
 
