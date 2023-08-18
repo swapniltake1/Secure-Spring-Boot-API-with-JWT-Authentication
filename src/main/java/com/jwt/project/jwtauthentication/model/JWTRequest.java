@@ -1,4 +1,4 @@
-package com.jwt.project.jwtauthentication.entity;
+package com.jwt.project.jwtauthentication.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,4 @@
-package com.jwt.project.jwtauthentication.config;
-
-import java.lang.System.Logger;
+package com.jwt.project.jwtauthentication.controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.jwt.project.jwtauthentication.entity.JWTRequest;
-import com.jwt.project.jwtauthentication.entity.JWTResponse;
+import com.jwt.project.jwtauthentication.Services.UserService;
+import com.jwt.project.jwtauthentication.entity.User;
+import com.jwt.project.jwtauthentication.model.JWTRequest;
+import com.jwt.project.jwtauthentication.model.JWTResponse;
 import com.jwt.project.jwtauthentication.security.JwtHelper;
 
 @RestController
@@ -30,6 +29,9 @@ public class AuthController {
 
     @Autowired
     private AuthenticationManager manager;
+
+    @Autowired
+    private UserService userService;
 
 
     @Autowired
@@ -80,6 +82,13 @@ public class AuthController {
     @ExceptionHandler(BadCredentialsException.class)
     public ResponseEntity<String> exceptionHandler() {
     return new ResponseEntity<>("Credentials Invalid !!", HttpStatus.UNAUTHORIZED);
+    }
+
+
+    // mapping for creating user
+    @PostMapping("/create-user")
+    public User createUser(@RequestBody User user){
+     return userService.createUser(user);
     }
 
 }
