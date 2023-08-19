@@ -5,6 +5,7 @@ This GitHub repository hosts a comprehensive example of a secure RESTful API bui
 # Key Features
 Spring Security Integration: Seamlessly incorporates Spring Security to provide advanced security layers for the API endpoints, ensuring protection against unauthorized access and potential threats.
 
+
 Role-Based Authentication: Demonstrates an intuitive role-based authentication system where access to specific API resources is controlled based on user roles, enhancing fine-grained access control.
 
 JWT Authorization: Implements JSON Web Tokens (JWT) to manage authorization, generating and validating tokens for verified users, promoting secure and stateless communication between the client and server.
